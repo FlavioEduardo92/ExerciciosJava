@@ -56,7 +56,7 @@ cd src
 javac ./Exercicios/ContaBancaria.java ./Exercicios/Main.java
 
 # 5. Execute o programa principal
-java Exercicios.Main
+java Exercicios.conta.ContaBancaria.Main
 
 # 6. Siga as instruções do menu interativo!
 ```
