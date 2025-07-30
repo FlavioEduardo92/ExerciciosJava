@@ -1,70 +1,69 @@
-# Java Bank Account Project ☕
+# Java Practice Exercises Compilation ☕
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-## 📄 About the Project
+## 📄 About This Repository
 
-This is a Java console project that simulates the basic operations of a bank account. It was developed as a practical exercise to apply programming logic and business rule concepts in an interactive environment.
+This repository serves as a comprehensive compilation of my Java practice exercises. It includes projects and challenges completed during university coursework, various bootcamps, and online courses. The goal is to document my learning journey, showcase applied programming logic, and reinforce fundamental to advanced Java concepts.
 
-The system is controlled by a terminal-based menu, allowing the user to choose the desired actions in a simple and direct way.
+Each exercise is designed to be a standalone, console-based application, focusing on specific problem-solving techniques and business rules.
 
-## ✨ Features
+## 📚 Exercise Categories and Projects
 
-The system offers an interactive menu with the following operations:
+This section outlines the different categories of exercises and lists the projects contained within each. For detailed information on features, business rules, and execution instructions for any project, please refer to its dedicated `README.md` file within its respective folder.
 
--   💰 **Check Available Balance:** Displays the current account balance.
--   💳 **Check Overdraft Limit:** Shows the total limit and the amount already used.
--   📥 **Make Deposits:** Adds funds to the account balance.
--   💸 **Perform Withdrawals:** Withdraws funds from the account, using the overdraft limit if necessary.
--   📄 **Pay Bills:** Works similarly to a withdrawal to debit the amount.
--   🚨 **Check Overdraft Usage:** Informs if the account is currently using the overdraft limit.
--   🚪 **Exit:** Terminates the program's execution.
+### Core Java Concepts
 
-## ⚙️ Implemented Business Rules
+Exercises focusing on fundamental Java programming, data types, control flow, methods, and basic object-oriented principles.
 
-The bank account logic follows a specific set of rules, mainly related to the overdraft feature:
+* #### **Arrays and Data Structures**
+    * **[Array Notes Challenge (DesafioArrayNotas)](https://github.com/FlavioEduardo92/ExerciciosJava/tree/main/src/Exercicios/arrays)**: A console application to calculate the average of student grades using arrays, loops, and basic input/output.
+    * * * #### **Conditional Logic and Loops**
+    * * #### **Object-Oriented Programming (OOP) Basics**
+    * ### Intermediate Java Projects
 
-#### **Overdraft Limit**
+Projects that delve into more complex data structures, algorithms, file I/O, error handling, and advanced OOP concepts.
 
--   The limit is defined at the time of **account creation**, based on the initial deposit amount:
-    -   If the initial deposit is **≤ $500.00**, the overdraft limit will be **$50.00**.
-    -   If the initial deposit is **> $500.00**, the overdraft limit will be **50% of the deposited amount**.
+* #### **Bank Account Simulation**
+    * **[Java Bank Account Project (ContaBancaria)](https://github.com/FlavioEduardo92/ExerciciosJava/tree/main/src/Exercicios/conta)**: A console application simulating bank account operations, focusing on **OOP (classes, objects, encapsulation, methods)**, **conditional logic**, **loops**, **input validation**, and **exception handling**. It implements specific **business rules** for overdraft limits and fees.
+    * * #### **Data Processing and Manipulation**
+    * ### Advanced Topics and Frameworks
 
-#### **Usage Fee**
+Exercises exploring advanced Java features, concurrent programming, basic API integrations, or frameworks.
 
--   When any amount of the overdraft is used, a **fee of 20%** on the *used* amount will be charged.
--   This fee is automatically charged as soon as the account receives a deposit that covers the amount due (the used overdraft balance + the fee).
+* #### **Collections and Streams**
+    * * #### **File I/O and Serialization**
+    * * #### **Exception Handling**
+    * ## 🚀 How to Run Exercises
 
-## 🚀 How to Run the Project
+To run any of the exercises in this repository, you will need to have the **JDK (Java Development Kit)** installed on your machine.
 
-To run this project, you will need to have the **JDK (Java Development Kit)** installed on your machine.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/FlavioEduardo92/ExerciciosJava.git](https://github.com/FlavioEduardo92/ExerciciosJava.git)
+    ```
+2.  **Navigate to the repository folder:**
+    ```bash
+    cd ExerciciosJava
+    ```
+3.  **Navigate to the source folder:**
+    ```bash
+    cd src
+    ```
+4.  **Compile and Run a specific exercise:**
+    * Each exercise is typically located in its own subfolder (e.g., `Exercicios/arrays/DesafioArrayNotas/` or `Exercicios/ContaBancaria/`).
+    * To compile and run a specific exercise, you'll generally need to navigate to its root folder (or specify the full path to its `.java` file) and then run the main class.
 
-```bash
-# 1. Clone the repository
-git clone [https://github.com/FlavioEduardo92/ExerciciosJava.git](https://github.com/FlavioEduardo92/ExerciciosJava.git)
-
-# 2. Navigate to the project folder
-cd ExerciciosJava
-
-# 3. Navigate to the source folder
-cd src
-
-# 4. Compile the Java files
-# (It's important to compile both files together)
-javac ./Exercicios/ContaBancaria.java ./Exercicios/Main.java
-
-<<<<<<< HEAD
-# 5. Execute o programa principal
-java Exercicios.conta.ContaBancaria.Main
-=======
-# 5. Run the main program
-java Exercicios.Main
->>>>>>> 70f39c0eb39dfce48bcb9831b419c7e888fe7061
-
-# 6. Follow the instructions in the interactive menu!
-```
+    **Example for `DesafioArrayNotas`:**
+    ```bash
+    # From the 'src' directory:
+    cd Exercicios/arrays/DesafioArrayNotas
+    javac DesafioArrayNotas.java
+    java DesafioArrayNotas
+    ```
+    * **Note:** Some projects might require compiling multiple `.java` files together. Refer to the specific `README.md` inside each exercise's folder for detailed instructions if needed.
 
 ## 👨‍💻 Author
 
